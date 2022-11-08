@@ -1,5 +1,5 @@
 # JavaScript-Workshop
-Pour bien me lancer en Javascript, j'ai realise un site web éducatif responsive proposant des exercices en JavaScript avec des solutions.
+Pour bien me lancer en Javascript, j'ai realise un site web éducatif responsive proposant des exercices en JavaScript avec des solutions.\n
 Le site balaye les chapitres suivants:
 
 ## Variables et affectation...
