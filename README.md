@@ -6,17 +6,17 @@ Le site balaye les chapitres suivants:
 ## Variables et affectation.
 ## Conditions.
 ## Boucles :
-  La boucle for.
+La boucle for.
   
-  La boucle while.
+La boucle while.
   
-  Les boucles imbriquées.
+Les boucles imbriquées.
 ## Chaines de caractères :
-  Recherche et suppression.
+Recherche et suppression.
   
-  Nombre de voyelles.
+Nombre de voyelles.
 ## Tableaux :.
-  Tri.
+Tri.
   
-  Recherche.
+Recherche.
 ## Fonctions.
