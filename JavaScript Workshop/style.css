@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* HEEEEEADEER */
+
+h1 , h2, li {
+    font-family: 'Kanit';
+}
+p {
+    font-family: 'Dosis';
+}
+header img {
+    width: 20%;
+    padding: 3% 0 0 0;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+header {
+    background-color: #F7DA59;
+}
+
+/* MENUUUUUUUUUU */
+
+nav {
+    padding: 4% 0 2% 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+li a:hover {
+    color: white;
+}
+nav ul li {
+    position: relative;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown {
+    display: none;
+    padding-top: 2vh;
+}
+nav ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    background-color:#F7DA59;
+}
+.dropdown ul {
+    display: block;
+    margin: 1em;
+}
+.dropdown ul li {
+    width: 13vw;
+    padding: 2%;
+}
+
+/* MAIIIIIIIIIIIIIIIIIINN */
+
+main {
+    background-color: #263551;
+    color: white;
+    padding-bottom: 10vh;
+}
+.first {
+    display: flex;
+    justify-content: center;
+}
+.about {
+    margin: 16vh 0 0 4vw;
+}
+main p {
+    margin-top: 2vh;
+    line-height: 4vh;
+}
+.third {
+    text-align: center;
+}
+hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+    background-color: #F7DA59;
+    border: #F7DA59 0.1px solid;
+}
+
+/* FOOOOOOOOOOOOTEER */
+
+footer {
+    background-color: #F7DA59;
+    padding: 2%;
+}
+footer p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* MEDIAAA QUERIES */
+
+@media only screen and (max-width: 1120px) {
+    main p {
+        margin: 2%;
+    }
+}
+@media only screen and (max-width: 805px) {
+    .first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    hr {
+        margin-top: 10vh;
+    }
+    .first img {
+        width: 40%;
+    }
+    .about {
+        margin: 0 4vw 0 4vw;
+    }
+    header img {
+        width: 40%;
+        padding: 3%;
+    }
+    footer {
+        padding: 4%;
+    }
+}
+@media only screen and (max-width: 780px) {
+    li {
+        font-size: 80%;
+    }
+    ul {
+        padding: 2%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    li {
+        font-size: 60%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    li {
+        font-size: 30%;
+    }
+}
+@media only screen and (max-width: 380px) {
+    footer p {
+        font-size: small;
+    }
+}

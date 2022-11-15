@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, li a{
+    font-family: 'Kanit';
+}
+body {
+    background-color: #F7DA59;
+}
+section {
+    margin: 4%;
+}
+h1 {
+    margin: 4%;
+    font-size: 2em;
+    color: #263551;
+}
+h2 {
+    background-color: #263551;
+    color: white;
+    width: 12vw;
+    padding: 0.3%;
+    padding-left: 1%;
+}
+p {
+    font-family: 'Dosis';
+    background-color: white;
+    padding: 1em;
+    line-height: 4vh;
+    font-size: large;
+}
+
+/* VARIABLES ET AFFECTATION */
+
+.affect {
+    background-color: white;
+    display: flex;
+    padding: 1em 1em 0 1em;
+}
+.affect input , .condition input{
+    height: 5vh;
+    background-color: #d9d9d9;
+    margin: 1em 1em 1em 0;
+    padding: 0 1em 0 1em;
+    border: none;
+    font-style: italic;
+}
+.affect button {
+    height: 5vh;
+    width: 5vw;
+    color: white;
+    background-color: #263551;
+    margin: 0 1em 0 1em;
+    border: none;
+    cursor: pointer;
+}
+
+/* CONDITIONS */
+
+.condition {
+    display: flex;
+}
+section div {
+    background-color: white;
+}
+.condition button {
+    height: 5vh;
+    width: 7vw;
+    color: white;
+    background-color: #263551;
+    border: none;
+    margin: 1em 0 0 6em;
+    cursor: pointer;
+}
+.conditions .condition p {
+    width: 6em;
+}
+
+/* LA BOUCLE FOR */
+
+.boucle .affect button {
+    margin: 1em 1em 1em 1em;
+    width: 8vw;
+    cursor: pointer;
+}
+.output {
+    padding: 1em;
+}
+.boucle p {
+    padding: 1em 1em 0 1em;
+}
+
+#b {
+    margin-left: 2em;
+}
+.calcul .affect button {
+    margin: 0 1em 1em 0;
+    cursor: pointer;
+}
+.recherche .condition p {
+    width: 20em;
+}
+#supprimer {
+    width: 12vw;
+}
+#message {
+    text-align: center;
+}
+.nombre button {
+    width: 15vw;
+    margin-top: 1em;
+    cursor: pointer;
+}
+#valider {
+    margin-top: 1em;
+}
+.source img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* NAVBAR */
+
+header {
+    background-color: #263551;
+}
+nav {
+    padding: 4% 0 4% 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+li a {
+    color: #F7DA59;
+    text-decoration: none;
+    font-weight: bold;
+}
+li a:hover {
+    color: white;
+}
+nav ul li {
+    position: relative;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown {
+    display: none;
+    padding-top: 2vh;
+}
+nav ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    background-color:#263551;
+}
+.dropdown ul {
+    display: block;
+    margin: 1em;
+}
+.dropdown ul li {
+    width: 13vw;
+    padding: 2%;
+}
+
+/* FOOOOOOTEERR */ 
+
+footer {
+    background-color: #263551;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    color: #F7DA59;
+}
+footer button {
+    cursor: pointer;
+    padding: 0.5%;
+    background-color: #F7DA59;
+    border: none;
+    border-radius: 5%;
+    width: 6%;
+    font-weight: bold;
+}
+footer button a {
+    text-decoration: none;
+    color: #263551;
+}
+#mar {
+    margin-top: 1em;
+}
+#marr {
+    margin-top: 1em;
+}
+script input {
+    color: #263551;
+    background-color: #263551;
+}
+
+/* MEDIAAA QUERIES */
+
+@media only screen and (max-width: 1250px) {
+    .affect button {
+        width: 25vw !important;
+    }
+    .recherche .condition button {
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    h2 {
+        height: auto;
+        width: auto;
+    }
+    li {
+        font-size: 80%;
+    }
+    ul {
+        padding: 2%;
+    }
+    footer button{
+        width: 12vw;
+    }
+    .conditions {
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        width: 15vw;
+    }
+    .condition button {
+        width: 15vw;
+        margin-left: 2em;
+    }
+    .recherche .condition {
+        display: flex;
+        flex-direction: column;
+    }
+    .recherche .condition input {
+        margin-left: 2em;
+        width: 60%;
+    }
+    .recherche .condition button {
+        width: 15% !important;
+    }
+}
+@media only screen and (max-width: 650px) {
+    li {
+        font-size: 60%;
+    }
+    .affect {
+        display: flex;
+        flex-direction: column;
+    }
+    #Permuter {
+        width: 8vw;
+    }
+    .source img {
+        width: 100%;
+    }
+    footer h3 {
+        font-size: small;
+    }
+    footer {
+        padding: 4%;
+    }
+    .affect button {
+        margin-left: 0% !important;
+    }
+    .recherche .condition button {
+        width: 25% !important;
+    }
+    .recherche .condition p {
+        width: auto;
+    }
+    .nombre .affect button, .nombre .affect input {
+        width: 60% !important;
+    }
+    #b {
+        margin-left: 0%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    li {
+        font-size: 30%;
+    }
+}

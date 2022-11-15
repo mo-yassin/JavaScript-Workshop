@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Les boucles imbriquées</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="variablesaffectation.html">Variables et affectation</a></li>
+                <li><a href="conditions.html">Conditions</a></li>
+                <li><a>Boucles <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="bouclefor.html">La boucle for</a></li>
+                            <li><a href="bouclewhile.html">La boucle while</a></li>
+                            <li><a href="bouclesimbriquees.html">Les boucles imbriquées</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a>Chaines de caractères <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="recherchesuppression.html">Recherche et suppression</a></li>
+                            <li><a href="nombredevoyelles.html">Nombre de voyelles</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a>Tableaux <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="tri.html">Tri</a></li>
+                            <li><a href="">Recherche</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="fonctions.html">Fonctions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Losange en étoiles</h1>
+        </div>
+        <section>
+            <h2>Enonce</h2>
+            <p>Ce programme a pour objectif de dessiner un losange en étoiles dont la longueur des diagonales est un nombre impair saisi par l’utilsateur. Dans le cas où l’utilisateur entre un nombre pair, il faut afficher une erreur.</p>
+        </section>
+        <section class="boucle">
+            <h2>Demo</h2>
+            <div class="affect">
+                <p>Saisir la longueur des diagonales :</p>
+                <input type="number" id="longue" placeholder="Diagonales">
+                <button type="button" onclick="dessine()">Dessiner</button>
+            </div>
+            <div class="output">
+                <output id="result"></output>
+            </div>
+        </section>
+        <section class="source">
+            <h2>Code source</h2>
+            <img src="images/boucleimbriquees.png" alt="source code">
+        </section>
+        <script>
+            function dessine() {
+            let n = document.getElementById("longue").value;
+            let string = "";
+                if (+n%2 == 0){
+                    result.innerHTML = 'Entrer un nombre impair'
+                }
+                else {
+                    for (let i = 1; i <= n; i++) {
+                        for (let j = n; j > i; j--) {
+                            string += " ";
+                        }
+                        for (let k = 0; k < i * 2 - 1; k++) {
+                            string += "*";
+                        }
+                        string += "\n";
+                    }
+                    for (let i = 1; i <= n - 1; i++) {
+                        for (let j = 0; j < i; j++) {
+                            string += " ";
+                        }
+                        for (let k = (n - i) * 2 - 1; k > 0; k--) {
+                            string += "*";
+                        }
+                        string += "\n";
+                    }
+                    result.innerHTML = (`<pre>${string}</pre>`);
+                }      
+            }
+        </script>
+    </main>
+    <footer>
+        <button><a href="bouclewhile.html">BACK</a></button>
+        <h3>Les boucles imbriquées</h3>
+        <button><a href="recherchesuppression.html">NEXT</a></button>
+    </footer>
+</body>
+</html>
